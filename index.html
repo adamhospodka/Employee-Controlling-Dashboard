@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <title>Employee Controlling</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗓</text></svg>">
+
+    <meta name="author" content="Adam Hospodka">
+
+</head>
+
+<body>
+
+    <div class="layout" id="box-1">
+        <h1>👨‍💼🧑‍💼 Controlling board</h1>
+    </div>
+    <hr>
+
+    <div class="layout" id="box-2"> 
+        <div class="layout" id="box-3">
+            <div class="layout" id="box-5">
+                <div class="layout" id="box-6">
+                    <h2>Employees</h2>
+                    <!-- FREE FOR TESTING  <button id="button-1"> Click me</button> -->
+                </div>
+                <div class="layout" id="box-7">
+                    <div class="layout" id="box-8">
+                        <div class="layout" id="box-15">
+                            <div class="filter_button">
+                                <img class="icon" src="icons/filter_icon.png"></img>
+                                <text>Filter</text>
+                            </div>
+                            <div class="sort_button">
+                                <img class="icon" src="icons/sort_icon.png"></img>
+                                <text>Sort</text>
+                            </div>
+                            <div class="group_button">
+                                <img class="icon" src="icons/group_icon.png"></img>
+                                <text>Group</text>
+                            </div>
+                        </div>
+                        <div class="layout" id="box-16">
+                            <!-- <p>Employees</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout" id="box-4">
+            <h2>Calendar </h2>
+            <div class="layout" id="box-13">
+            </div>
+            <div class="layout" id="box-9">
+                <div class="layout" id="box-11">
+                    <section class="calendar-month-header">
+                        <div
+                          id="selected-month"
+                          class="calendar-month-header-selected-month"
+                        ></div>
+                        <div>
+                            <section class="calendar-month-header-selectors">
+                                <span id="previous-month-selector"><</span>
+                                <span id="present-month-selector">Today</span>
+                                <span id="next-month-selector">></span>
+                              </section>
+                        </div>
+                      </section>
+                    <div class="layout" id="box-14">
+
+                        <div class="calendar-month">
+                          
+                            <ol
+                              id="days-of-week"
+                              class="day-of-week"
+                            /></ol>
+                          
+                            <ol
+                              id="calendar-days"
+                              class="days-grid"
+                            ></ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <h2>Worked hours </h2>
+            <div class="layout" id="box-10">
+                <div class="layout" id="box-12">
+                    <!-- <p>Expected work chart</p> -->
+                    <canvas id="line-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+<!-- D3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<!-- Charts.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- DayJS -->
+<script src="https://unpkg.com/dayjs@1.10.7/dayjs.min.js"></script>
+<script type="application/javascript" src="https://unpkg.com/dayjs@1.10.7/plugin/weekday.js"></script>
+<!-- Tippy -->
+<script type="module" src="https://unpkg.com/@popperjs/core@2"></script>
+<script type="module" src="https://unpkg.com/tippy.js@6"></script>
+
+<!-- Main -->
+<script src="scripts/script.js"></script>
+
+
+
+<script type="text/javascript" src="./scripts/functions.js">
+    import { log, unique, generate_name, cumsum } from './scripts/functions.js';
+</script>
